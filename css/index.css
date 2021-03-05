@@ -418,6 +418,7 @@ footer{
     }
     .maintext{
         font-size: 15vw;
+        margin-top: unset;
     }
     .secondtext{
         font-size: 2vw;
