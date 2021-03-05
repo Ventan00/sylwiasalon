@@ -452,6 +452,9 @@ footer{
     .links{
         display: none;
     }
+    header img{
+       margin-left : 30px;
+    }
     .hamburger{
         display: block;
         width: 100%;
