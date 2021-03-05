@@ -32,7 +32,7 @@ h1{
     background-size: cover;
 }
 .bg1{
-    background-image: url('../img/background_2.png');
+    background-image: url('../img/background_2.jpg');
     margin-top: 70px;
     color: white;
     padding-left: 10vw;
@@ -76,7 +76,7 @@ h1{
     font-family: 'Nunito Sans', sans-serif;
 }
 .bg2{
-    background-image: url('../img/background_1.png');
+    background-image: url('../img/background_1.jpg');
     height: fit-content;
     padding-top:  50px;
     padding-bottom:  120px;

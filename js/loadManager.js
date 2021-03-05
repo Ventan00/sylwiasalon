@@ -1,4 +1,4 @@
-$(document).load(function (){
-    console.log("loaded");
-
-});
+window.onload=function (){
+    console.log("loaded2");
+    document.getElementById("loader").style.display = "none";
+};
