@@ -12,8 +12,40 @@
 </head>
 <body>
 <header>
-    <img src="img/logo.svg" alt="logo"><nav class="links"><p><a href="#sg">STRONA GŁÓWNA</a>|<a href="#of">O FIRMIE</a>|<a  href="#cn">CENNIK</a>|<a href="#kt">KONTAKT</a></p></nav>
+    <img src="img/logo.svg" alt="logo">
+    <nav class="links"><p><a href="#sg">STRONA GŁÓWNA</a>|<a href="#of">O FIRMIE</a>|<a  href="#cn">CENNIK</a>|<a href="#kt">KONTAKT</a></p></nav>
+    <nav class="hamburger">
+        <svg id="burger" class="svgload" viewBox="0 0 70 72" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                .svgload{
+                    cursor: pointer;
+                }
+                line{
+                    transform-origin: center;
+                }
+            </style>
+            <defs>
+                <clipPath id="a">
+                    <rect width="70" height="70"/>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+                <rect width="70" height="70" fill="#fff"/>
+                <g fill="none" stroke="#707070">
+                    <line id="line1" transform="translate(0 20)" x2="70"/>
+                    <line id="line2" transform="translate(0 40)" x2="70"/>
+                    <line id="line3" transform="translate(0 60)" x2="70"/>
+                </g>
+            </g>
+        </svg>
+    </nav>
 </header>
+<nav id="navmb" class="mobileNav">
+    <a class="mobileNava" href="#sg" onclick="openMenu()">STRONA GŁÓWNA</a>
+    <a class="mobileNava" href="#of" onclick="openMenu()">O FIRMIE</a>
+    <a class="mobileNava" href="#cn" onclick="openMenu()">CENNIK</a>
+    <a class="mobileNava2" href="#kt" onclick="openMenu()">KONTAKT</a>
+</nav>
 <div id="sg" class="parallax bg1">
     <div class="maintext">
         Zakład fryzjerski</br>
@@ -29,7 +61,9 @@
 <div id="of" class="about">
     <div>
         <h1 style="color: #946CB3">O firmie</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus lobortis odio in suscipit. Nulla et facilisis neque, et auctor lacus. Sed vitae dolor ligula. Cras sed felis risus. Integer tempor placerat imperdiet. Donec vestibulum ipsum quam, id rhoncus risus tincidunt et. Nulla in auctor purus, ac imperdiet elit. Nulla pharetra congue lectus, eget aliquam tortor dapibus a. Fusce et ultrices libero, eget ultrices ipsum. Etiam lobortis neque ac urna tempor vestibulum. Suspendisse pellentesque, velit id aliquam scelerisque, nunc urna gravida tellus, nec ultrices nulla neque a tortor. Nam lobortis leo id ullamcorper fringilla. Morbi accumsan ligula ipsum, eu varius tortor rhoncus et. Etiam eget convallis magna. Nulla facilisi. Donec ultricies turpis diam, in laoreet est posuere ut.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus lobortis odio in suscipit. Nulla et facilisis neque, et auctor lacus. Sed vitae dolor ligula. Cras sed felis risus. Integer tempor placerat imperdiet. Donec vestibulum ipsum quam, id rhoncus risus tincidunt et. Nulla in auctor purus, ac imperdiet elit. Nulla pharetra congue lectus, eget aliquam tortor dapibus a. Fusce et ultrices libero, eget ultrices ipsum. Etiam lobortis neque ac urna tempor vestibulum. Suspendisse pellentesque, velit id aliquam scelerisque, nunc urna gravida tellus, nec ultrices nulla neque a tortor. Nam lobortis leo id ullamcorper fringilla. Morbi accumsan ligula ipsum, eu varius tortor rhoncus et. Etiam eget convallis magna. Nulla facilisi. Donec ultricies turpis diam, in laoreet est posuere ut.
+        </p>
     </div>
 
     <img src="img/owner.png" alt="Sylwia Twardowska"/>
@@ -176,8 +210,9 @@
 
 </div>
 <footer>
-    <div class="navigation"><nav class="links botlinks"><p><a href="#sg">STRONA GŁÓWNA</a>|<a href="#of">O FIRMIE</a>|<a  href="#cn">CENNIK</a>|<a href="#kt">KONTAKT</a></p></nav></div>
+    <div class="navigation"><nav class="links2 botlinks"><p><a href="#sg">STRONA GŁÓWNA</a>|<a href="#of">O FIRMIE</a>|<a  href="#cn">CENNIK</a>|<a href="#kt">KONTAKT</a></p></nav></div>
     <div class="servernet">projekt strony: <a href="https://servernet.pl/"><img src="img/servernet.svg" alt="servernet"></a></div>
 </footer>
 </body>
+<script src="js/menuManager.js"></script>
 </html>

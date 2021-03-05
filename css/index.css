@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -20,6 +21,9 @@ h1{
     font-size: xxx-large;
     letter-spacing: 3px;
 }
+.hamburger{
+    display: none;
+}
 .parallax{
     height: 100%;
     background-attachment: fixed;
@@ -33,13 +37,16 @@ h1{
     color: white;
     padding-left: 10vw;
     font-family: 'CynapsePro', Fallback, sans-serif;
-    min-height: fit-content;
-
+    height: 100vh;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
 
 }
 .bg1 div{
     width: auto;
     animation: slidein 1.2s ease-in;
+
 }
 @keyframes slidein {
     0% {
@@ -47,13 +54,13 @@ h1{
     }
 
     80%{
-        margin-left: 100px;
+        margin-left: 8vw;
     }
     90%{
-        margin-left: -50px;
+        margin-left: -4vw;
     }
     95%{
-        margin-left: 25px;
+        margin-left: 2vw;
     }
     100% {
         margin-left: 0;
@@ -61,6 +68,7 @@ h1{
 }
 .maintext{
     font-size: 10vw;
+    width: 100%;
 }
 .secondtext{
     font-size: 1.6vw;
@@ -76,6 +84,7 @@ h1{
     width: fit-content;
     font-size: 2vw;
     margin-top: 3vw;
+    padding-bottom: 50px;
 }
 .button a{
     border: #aaa 1px solid;
@@ -104,6 +113,28 @@ header{
     margin-bottom: auto;
     float: left;
 }
+.links2{
+    margin-left: 20px;
+    vertical-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+}
+.links2 p{
+    text-decoration: none;
+    float: left;
+}
+.links2 a{
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: margin .4s;
+}
+.links2 a:hover{
+    color: #946CB3;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all .4s ease-in;
+}
 .links p{
     text-decoration: none;
     float: left;
@@ -131,7 +162,6 @@ header img{
     display: inline-flex;
     height: fit-content;
     position: relative;
-    /*animation: slidein2 1.2s ease-in;*/
 }
 .about img{
     max-width: 300px;
@@ -209,12 +239,13 @@ header img{
 }
 .info{
     margin: auto;
+    margin-left: 10vw;
 }
 .mapka{
     margin: auto;
 }
 .contact img{
-    width: 30px;
+    width: 17px;
 }
 .openhours{
     display: flex;
@@ -231,7 +262,7 @@ header img{
 }
 .hoursline{
     display: flex;
-    border-bottom: black solid 1px;
+    border-bottom: #946CB3 solid 1px;
 }
 .openHoursText{
     margin-right: 0;
@@ -274,4 +305,137 @@ footer{
 .servernet img{
     height: 20px;
     vertical-align: middle;
+}
+.mobileNav{
+    position: fixed;
+    height: 100vh;
+    width: 40vw;
+    background-color: white;
+    right: 0;
+    padding-top: 120px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    border-left: #946CB3 solid 1px;
+    transform: translateX(40vw);
+}
+.mobileNava{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    border-bottom: #946CB3 solid 1px;
+    padding-right: 20px;
+}
+.mobileNava2{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-right: 20px;
+
+}
+@media only screen and (max-width: 1053px) {
+    .contact {
+        display: block;
+        max-width: 100%;
+    }
+    .info{
+        margin-right: 10vw;
+    }
+    .mapka{
+        width: 100%;
+    }
+    .mapka iframe{
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 79.5%;
+        margin-bottom: 200px;
+    }
+}
+@media only screen and (max-width: 774px){
+    .cennik{
+        display: block;
+        max-width: 100vw;
+    }
+    .leftTable, .rightTable{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .price{
+        margin-right: 10vw;
+    }
+    .name{
+        margin-left: 10vw;
+    }
+    .about{
+        display: block;
+    }
+    .about img{
+        width: 300px;
+        margin-left: calc(50% - 150px);
+        margin-right: calc(50% - 150px);
+    }
+    .about div{
+        padding-bottom: 0;
+    }
+    .about p{
+        text-align: justify;
+        margin-right: 0;
+    }
+    .maintext{
+        font-size: 15vw;
+    }
+    .secondtext{
+        font-size: 2vw;
+    }
+    .button{
+        font-size: 5vw;
+    }
+    .button a{
+        padding: 2.3vw 5.3vw;
+    }
+    .bg1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+    }
+}
+@media only screen and (max-width: 714px){
+    .links{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 100%;
+    }
+    .hamburger svg{
+        margin-right: 5vw;
+        float: right;
+        cursor: pointer;
+        width: 60px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 531px){
+    .maintext{
+        font-size: 18vw;
+
+    }
+    .secondtext{
+        font-size: 3vw;
+    }
+    .button{
+        font-size: 7vw;
+    }
+}
+@media only screen and (max-width: 458px){
+    .openhours{
+        display: block;
+    }
+    .hourslabel{
+        margin-bottom: 40px;
+    }
+    .labelname{
+        margin-bottom: 20px;
+    }
 }

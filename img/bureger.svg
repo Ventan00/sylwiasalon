@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="svgload" viewBox="0 0 70 72" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .svgload{
+      cursor: pointer;
+    }
+  </style>
+  <defs>
+    <clipPath id="a">
+      <rect width="70" height="72"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)">
+    <rect width="70" height="72" fill="#fff"/>
+    <g transform="translate(-630.5 -25.5)" fill="none" stroke="#707070">
+      <line id="line1" transform="translate(630.5 40.5)" x2="80"/>
+      <line id="line2" transform="translate(630.5 61.5)" x2="80"/>
+      <line transform="translate(630.5 82.5)" x2="70"/>
+    </g>
+  </g>
+</svg>
