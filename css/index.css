@@ -334,6 +334,40 @@ footer{
     padding-right: 20px;
 
 }
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    margin-top: -70px;
+    align-items: center;
+    justify-content: center;
+}
+.loader img{
+    width: 40px;
+    position: fixed;
+    margin-left: 7px;
+    margin-top: 7px;
+    color: #946CB3;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #946CB3;
+    border-color: #946CB3 transparent #946CB3 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
 @media only screen and (max-width: 1053px) {
     .contact {
         display: block;
@@ -405,6 +439,14 @@ footer{
         width: unset !important;
     }
 }
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 @media only screen and (max-width: 714px){
     .links{
         display: none;
@@ -417,8 +459,8 @@ footer{
         margin-right: 5vw;
         float: right;
         cursor: pointer;
-        width: 60px;
-        margin-top: 5px;
+        width: 50px;
+        margin-top: 10px;
     }
     .bottext{
         display: block;
@@ -491,5 +533,10 @@ footer{
     }
     footer img{
         width: 25vw;
+    }
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
     }
 }
