@@ -64,6 +64,7 @@ function secondrot(direction){
 function thirdopacity(direction){
     var temp = direction ? 50 - step3 : step3;
     downline.style.opacity = 2*temp+"%";
+    downline.style.webkitFilter = "opacity("+2*temp/100+")"
     if((temp===50 && step3 !== 0) || (temp === 0 && step3 !== 0)){
         clearInterval(interval3);
         step3=0;
